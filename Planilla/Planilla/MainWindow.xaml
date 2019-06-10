@@ -1,0 +1,46 @@
+﻿<Window x:Class="Planilla.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Planilla"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="447.2"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <!--Definicion de Columnas-->
+        <StackPanel Grid.Column="0" Margin="0,0,2.2,0">
+            <Label Content="Nombre del Empleado:" FontSize="15" Margin="10,60,240,1"/>
+            <Label Content="Identidad:.txt" FontSize="15" Margin="20,20,330,1"/>
+            <Label Content="Horas Trabajadas:" FontSize="15" Margin="20,20,270,1"/>
+            <Label Content="Pago por Hora Normal de Trabajo:" FontSize="15" Margin="20,20,140,1"/>
+            <Label Content="Horas Extras Trabajadas:" FontSize="15" Margin="20,20,220,1"/>
+            <Label Content="Pago por Hora de Trabajo Extra:" FontSize="15" Margin="20,20,160,1"/>
+            <Label Content="Calcular" FontSize="20" Margin="150,20,160,1"/>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Margin="0,0,0.2,0">
+            <TextBox  Margin="200,70,10,0"  Text="{Binding Path=x1, Mode=TwoWay}"  />
+            <TextBox  Margin="200,30,10,0"  Text="{Binding Path=x1, Mode=TwoWay}"  />
+            <TextBox  Margin="200,35,10,0"  Text="{Binding Path=x1, Mode=TwoWay}"  />
+            <TextBox  Margin="270,30,10,0"  Text="{Binding Path=x1, Mode=TwoWay}"  />
+            <TextBox  Margin="200,35,10,0"  Text="{Binding Path=x1, Mode=TwoWay}"  />
+            <TextBox  Margin="250,35,10,0"  Text="{Binding Path=x1, Mode=TwoWay}"  />
+            
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+                <Label Content="Sueldo sin Deducciones:" FontSize="15" Margin="90,40,0,1" HorizontalAlignment="Left" Width="200"/>
+                <Label Content="Sueldo por Horas Extra:" FontSize="15" Margin="90,60,0,1" HorizontalAlignment="Left" Width="200"/>
+                <Label Content="Deducciones al Empleado:" FontSize="15" Margin="90,60,0,1" HorizontalAlignment="Left" Width="200"/>
+                <Label Content="Sueldo Total del Empleado:" FontSize="15" Margin="90,60,0,1" HorizontalAlignment="Left" Width="200"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Margin="0,0,0.2,0">
+            <TextBox  Margin="90,70,90,0"  Text="{Binding Path=x1, Mode=TwoWay}"  />
+            <TextBox  Margin="90,75,90,0"  Text="{Binding Path=x1, Mode=TwoWay}"  />
+            <TextBox  Margin="90,70,90,0"  Text="{Binding Path=x1, Mode=TwoWay}"  />
+            <TextBox  Margin="90,75,90,0"  Text="{Binding Path=x1, Mode=TwoWay}"  />
+        </StackPanel>
+    </Grid>
+</Window>
