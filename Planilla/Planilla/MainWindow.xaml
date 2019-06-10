@@ -21,6 +21,8 @@
             <Label Content="Pago por Hora de Trabajo Extra:" FontSize="15" Margin="20,20,160,1"/>
             <Label Content="Calcular" FontSize="20" Margin="150,20,160,1"/>
             
+            
+            
         </StackPanel>
         <StackPanel Grid.Column="0" Margin="0,0,0.2,0">
             <TextBox  Margin="200,70,10,0"  Text="{Binding Path=x1, Mode=TwoWay}"  />
