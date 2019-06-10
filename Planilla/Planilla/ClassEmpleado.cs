@@ -27,6 +27,7 @@ namespace Planilla
             PagoHoraNormalTrabajo = 32000;
             HorasExtrasTrabajadas = 5;
             PagoHoraTrabajoExtra = 1200;
+
         }
 
         public string Nombre_del_Empleado { get => nombre_del_Empleado; set => nombre_del_Empleado = value; }
